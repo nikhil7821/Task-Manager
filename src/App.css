@@ -1,0 +1,234 @@
+body.light {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  .App {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.dark .App {
+    background-color: #1e1e1e;
+  }
+  
+  header {
+    background-color: #1ea730;
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .task-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .add-task-btn {
+    background-color: #1ea730;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-buttons button {
+    background-color: #1ea730;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-buttons button.active {
+    background-color: #1ea730;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  body.dark .search-input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-form input,
+  .task-form select,
+  .task-form button {
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+  
+  body.dark .task-form input,
+  body.dark .task-form select,
+  body.dark .task-form button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  .task-form button {
+    background-color: #1ea730;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: left;
+  }
+  
+  body.dark .task-list li {
+    background: #333;
+    border: 1px solid #444;
+  }
+  
+  .task-list li.completed {
+    background: #e0ffe0;
+  }
+  
+  body.dark .task-list li.completed {
+    background: #2e7d32;
+  }
+  
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .task-header .priority {
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .task-header .priority.low {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .task-header .priority.medium {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .task-header .priority.high {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .task-details {
+    display: none;
+  }
+  
+  .task-details p {
+    margin: 5px 0;
+  }
+  
+  .task-actions button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-actions button.edit {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .task-actions button.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .task-actions button.toggle {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .task-details {
+    display: block;
+  }
+  
+  @media (max-width: 600px) {
+    .App {
+      padding: 10px;
+    }
+  
+    .task-form input,
+    .task-form select,
+    .task-form button {
+      width: 100%;
+    }
+  
+    .task-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .task-header .priority {
+      margin-top: 10px;
+    }
+  
+    .task-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .task-actions button {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+  
